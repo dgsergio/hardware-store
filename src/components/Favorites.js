@@ -3,7 +3,6 @@ import next from '../assets/next.svg';
 import previus from '../assets/previus.svg';
 import { useState } from 'react';
 import Favorite from './Favorite';
-import starIcon from '../assets/star.svg';
 
 const FavoritesSection = styled.section`
   display: flex;
@@ -30,18 +29,18 @@ const TitleDiv = styled.div`
   margin: 2rem 0 0.5rem;
   column-gap: 1rem;
   justify-content: center;
-
+  border-bottom: 0.1rem solid #ddd ;
+  
   @media (min-width: 768px) {
     justify-content: left;
   }
 
-  & img {
+  & img { 
     width: 2.5rem;
     filter: grayscale(1);
   }
   & h3 {
-    font-size: 1.7rem;
-    font-weigh: normal;
+    font-size: 1.6rem;
     color: #999;
     letter-spacing: 0.2rem;
     padding: 0.5rem 0;
@@ -71,7 +70,6 @@ const Favorites = ({ favItems }) => {
   return (
     <>
       <TitleDiv>
-        <img src={starIcon} alt="star" />
         <h3>Your favorite products</h3>
       </TitleDiv>
       {favItems.length === 0 && (
