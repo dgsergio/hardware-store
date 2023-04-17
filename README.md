@@ -1,5 +1,5 @@
 # Hardware Store Demo
-This is an e-commerce with a shopping cart website demo. You can visit a fully functional (dummy_list version) at the following link: 
+This is an e-commerce with a shopping cart website demo. You can visit it at the following link: 
 https://hardware-store-demo.web.app/
 
 ### React, React Router, Style Component
